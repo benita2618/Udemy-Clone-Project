@@ -3,113 +3,334 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Udemy Clone</title>
+
     <link rel="stylesheet" href="prject1.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap" rel="stylesheet">
-    <title>Udemy Clone</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    >
 </head>
+
 <body>
-    <div class="header-section">
+
+    <!-- NAVBAR -->
+    <header class="header-section">
+
         <div class="section-s1">
-            <h1>Udemy</h1>
-            <p>Explore</p>
-            <p>Subscribe</p>
+            <a href="index.html" class="brand">Udemy</a>
+
+            <a href="#" class="nav-link">Explore</a>
+            <a href="#" class="nav-link">Subscribe</a>
         </div>
+
         <div class="section-s2">
-           <i class="fa-solid fa-magnifying-glass"></i>
-            <input placeholder="Searching  for anything">
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <input
+                type="text"
+                placeholder="Search for anything"
+            >
         </div>
+
         <div class="section-s3">
-            <p>Udemy Business</p>
-            <p>Tech on Udemy</p>
 
-            <div class="section-s4">
+            <a href="#" class="nav-link">Udemy Business</a>
+            <a href="#" class="nav-link">Teach on Udemy</a>
+
+            <a href="#" class="cart">
                 <i class="fa-solid fa-cart-shopping"></i>
-                <a class="logo-1" href="login.html">Log in</a>
-                <a class="logo-2" href="signup.html">Sign Up</a>
-                
-            </div>
-            <div class="section-s5">
-            <i class="fa-solid fa-globe"></i>
-            </div>
-        </div>
-        <div class="image">
-            <img src="images/sale image.jpg" alt="sale image">      
-        </div>
-    </div>
-    <div class="course-section">
-        <div class="course-section_one">
-            <h2>Learn essential career and life skills</h2>
-            <p>Udemy helps you build in-demand skills fast and advance your career in a changing job market</p>
-        </div>
-        
-            <div class="course-container">
-                <div class="section-card">
-                   <img src="images/AI.avif" alt="AI image">
-                   <p>Generative AI</p>
-                   <p>Learn AI tools like ChatGPT, image generation, and automation.</p>
-                   <p><strong>Duration:</strong> 3 Months</p>
-                   <p>4.9 ⭐⭐⭐⭐⭐</p>
-                   <p><strong>Price:</strong> ₹4,999</p>
-                </div>
-                <div class="section-card">
-                   <img src="images/IT.avif" alt="IT image">
-                   <P>IT Certification</P>
-                   <p>Prepare for AWS, Azure, and networking certifications.</p>
-                   <p><strong>Duration:</strong> 4 Months</p>
-                   <p>4.9 ⭐⭐⭐⭐⭐</p>
-                   <p><strong>Price:</strong> ₹6,999</p>
-                   
-            </div>
-                   <div class="section-card">
-                   <img src="images/data.avif" alt="Data image">
-                   <p>Data Science</p>
-                   <p>Learn Python, data analysis, machine learning basics.</p>
-                   <p><strong>Duration:</strong> 5 Months</p>
-                   <p>4.9 ⭐⭐⭐⭐⭐</p>
-                   <p><strong>Price:</strong> ₹7,999</p>
-                   
-            </div>
-        </div>
-       </div>
-    <div class="topics">
-        <h2>Recommended for you</h2>
-    <div class="topics_container">
-        <p>Websites</p>
-        <p>Mobile apps</p>
-        <p>Programming Languages</p>
-        <p>Data science</p>
-        <p>Design</p>
-        <p>Marketing</p>    
-    </div>
-    </div>
-   <div class="footer">
-    <div class="footer-top">
-    <div class="footer-s1">
-        <p>Udemy Business</p>
-        <p>Teach on Udemy</p>
-        <p>Get the App</p>
-        <p>About us</p>
-        <p>Contact Us</p>
-    </div>
-    <div class="footer-s2">
-        <p>Careers</p>
-        <p>Blog</p>
-        <p>Help and Support</p>
-        <p>Affiliate</p>
-        <p>Investors</p>
+            </a>
+
+            <a href="login.html" class="login-btn">
+                Log in
+            </a>
+
+            <a href="signup.html" class="signup-btn">
+                Sign up
+            </a>
+
+            <a href="#" class="language-btn">
+                <i class="fa-solid fa-globe"></i>
+            </a>
+
         </div>
 
-    </div>
-    <div class="footer__one">
-        <h1>Udemy</h1>
-    <p>&copy; 2026 Udemy, Inc.</p>
-    </div>
-   </div>
-         </div>
-    </div>
-    
+    </header>
+
+
+    <!-- HERO IMAGE -->
+    <section class="hero-section">
+
+        <img
+            src="images/sale image.jpg"
+            alt="Udemy sale"
+        >
+
+        <div class="hero-content">
+
+            <h1>
+                Learn without limits
+            </h1>
+
+            <p>
+                Build your skills with thousands of online courses
+                taught by experienced instructors.
+            </p>
+
+            <a href="#courses" class="hero-btn">
+                Start learning
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- COURSES -->
+    <section class="course-section" id="courses">
+
+        <div class="course-section-one">
+
+            <h2>
+                Learn essential career and life skills
+            </h2>
+
+            <p>
+                Udemy helps you build in-demand skills fast and
+                advance your career in a changing job market.
+            </p>
+
+        </div>
+
+
+        <div class="course-container">
+
+            <!-- CARD 1 -->
+            <div class="section-card">
+
+                <img
+                    src="images/AI.avif"
+                    alt="Generative AI course"
+                >
+
+                <div class="card-content">
+
+                    <h3>
+                        Generative AI
+                    </h3>
+
+                    <p>
+                        Learn AI tools like ChatGPT,
+                        image generation, and automation.
+                    </p>
+
+                    <p>
+                        <strong>Duration:</strong> 3 Months
+                    </p>
+
+                    <p class="rating">
+                        4.9 ⭐⭐⭐⭐⭐
+                    </p>
+
+                    <p class="price">
+                        ₹4,999
+                    </p>
+
+                    <a href="#" class="course-btn">
+                        View Course
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- CARD 2 -->
+            <div class="section-card">
+
+                <img
+                    src="images/IT.avif"
+                    alt="IT Certification course"
+                >
+
+                <div class="card-content">
+
+                    <h3>
+                        IT Certification
+                    </h3>
+
+                    <p>
+                        Prepare for AWS, Azure,
+                        and networking certifications.
+                    </p>
+
+                    <p>
+                        <strong>Duration:</strong> 4 Months
+                    </p>
+
+                    <p class="rating">
+                        4.9 ⭐⭐⭐⭐⭐
+                    </p>
+
+                    <p class="price">
+                        ₹6,999
+                    </p>
+
+                    <a href="#" class="course-btn">
+                        View Course
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- CARD 3 -->
+            <div class="section-card">
+
+                <img
+                    src="images/data.avif"
+                    alt="Data Science course"
+                >
+
+                <div class="card-content">
+
+                    <h3>
+                        Data Science
+                    </h3>
+
+                    <p>
+                        Learn Python, data analysis,
+                        and machine learning basics.
+                    </p>
+
+                    <p>
+                        <strong>Duration:</strong> 5 Months
+                    </p>
+
+                    <p class="rating">
+                        4.9 ⭐⭐⭐⭐⭐
+                    </p>
+
+                    <p class="price">
+                        ₹7,999
+                    </p>
+
+                    <a href="#" class="course-btn">
+                        View Course
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- TOPICS -->
+    <section class="topics">
+
+        <h2>
+            Recommended for you
+        </h2>
+
+        <div class="topics-container">
+
+            <a href="#">Web Development</a>
+
+            <a href="#">Mobile Apps</a>
+
+            <a href="#">Programming Languages</a>
+
+            <a href="#">Data Science</a>
+
+            <a href="#">Design</a>
+
+            <a href="#">Marketing</a>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="footer-top">
+
+            <div class="footer-column">
+
+                <h3>
+                    Udemy
+                </h3>
+
+                <a href="#">Udemy Business</a>
+                <a href="#">Teach on Udemy</a>
+                <a href="#">Get the App</a>
+                <a href="#">About Us</a>
+                <a href="#">Contact Us</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>
+                    Support
+                </h3>
+
+                <a href="#">Careers</a>
+                <a href="#">Blog</a>
+                <a href="#">Help and Support</a>
+                <a href="#">Affiliate</a>
+                <a href="#">Investors</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>
+                    Categories
+                </h3>
+
+                <a href="#">Development</a>
+                <a href="#">Business</a>
+                <a href="#">Design</a>
+                <a href="#">Marketing</a>
+                <a href="#">IT & Software</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <h2>
+                Udemy
+            </h2>
+
+            <p>
+                &copy; 2026 Udemy, Inc.
+            </p>
+
+        </div>
+
+    </footer>
+
 </body>
 </html>
